@@ -34,6 +34,7 @@ public class Uppgift2 {
     smallest = first;
     count = 0;
 
+    // This loop is doing some heavy lifting
     for (index = 1; index < arr.length; index++) {
 
       if (arr[index] > largest) {
