@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Uppgift2 {
 
   public static void main(String[] args) {
-    // Variable declarations
-    int first, second, third, largest;
+
+    int first, second, third, largest, index;
     Scanner scan = new Scanner(System.in);
     int[] arr = new int[3];
 
@@ -19,18 +19,11 @@ public class Uppgift2 {
     arr[0] = first;
     arr[1] = second;
     arr[2] = third;
-    largest = 0;
-    scan.close();
-    for (int num : arr) {
-      if (num > largest) {
-        largest = num;
-      }
+    largest = first;
+
+    for (index = 0; index < arr.length; index++) {
     }
 
-    for (int num : arr) {
-      if (largest == num) {
-        continue;
-      }
-    }
+    scan.close();
   }
 }
